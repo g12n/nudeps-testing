@@ -1,0 +1,43 @@
+# --- macOS Spezifisch ---
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# --- Node.js Abhängigkeiten ---
+node_modules/
+jspm_packages/
+
+# --- Build & Output ---
+dist/
+build/
+out/
+.next/
+.nuxt/
+*.tsbuildinfo
+
+# --- Debug & Logs ---
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+logs
+*.log
+
+# --- Umgebungsvariablen & Geheimnisse ---
+.env
+.env.local
+.env.*.local
+*.pem
+
+# --- Testing & Coverage ---
+coverage/
+.nyc_output
+
+# --- IDEs (Optional) ---
+.vscode/
+.idea/
+*.swp
