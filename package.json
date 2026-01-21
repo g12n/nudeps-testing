@@ -4,15 +4,21 @@
   "description": "testing nudeps by lea verou",
   "license": "ISC",
   "author": "",
-  "type": "commonjs",
-  "main": "index.js",
+  "type": "module",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dependencies": "npx nudeps",
+    "dev": "eleventy --serve",
+    "clean": "rm -rf _site",
+    "build": "npm run clean && npm run dependencies && eleventy"
   },
   "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
     "nudeps": "^0.0.6"
   },
   "dependencies": {
+    "@g12n/confetti-fall": "git+https://github.com/g12n/confetti-fall.git#5252c40",
     "colorjs.io": "^0.6.1"
   }
 }
