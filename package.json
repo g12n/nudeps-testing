@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@g12n/confetti-fall": "git+https://github.com/g12n/confetti-fall.git#5252c40",
+    "@g12n/fancy": "file:my-fancy-local-package",
     "colorjs.io": "^0.6.1"
   }
 }
