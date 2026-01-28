@@ -8,18 +8,18 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dependencies": "npx nudeps",
     "dev": "eleventy --serve",
     "clean": "rm -rf _site",
-    "build": "npm run clean && npm run dependencies && eleventy"
+    "build": "npm run clean && npm run dependencies && eleventy",
+    "dependencies": "npx nudeps"
+  },
+  "dependencies": {
+    "@g12n/fancy": "file:my-fancy-local-package",
+    "colorjs.io": "^0.6.1",
+    "@g12n/confetti-fall": "github:g12n/confetti-fall"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
-    "nudeps": "^0.0.6"
-  },
-  "dependencies": {
-    "@g12n/confetti-fall": "git+https://github.com/g12n/confetti-fall.git#5252c40",
-    "@g12n/fancy": "file:my-fancy-local-package",
-    "colorjs.io": "^0.6.1"
+    "nudeps": "github:nudeps/nudeps"
   }
 }
